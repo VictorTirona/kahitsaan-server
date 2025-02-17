@@ -45,7 +45,7 @@ app.post('/api/v1/nearbySearch', async (req, res) => {
             body: JSON.stringify({
                 includedTypes: ["restaurant", "seafood_restaurant"], //can add more based on Table A https://developers.google.com/maps/documentation/places/web-service/place-types#table-b
                 excludedTypes: ["hotel"],
-                maxResultCount: 3,
+                maxResultCount: 15,
                 locationRestriction: {
                     circle: {
                         center: {
